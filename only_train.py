@@ -34,6 +34,5 @@ new_model = pretrain_agent(new_model, new_env, train_expert_dataset, test_expert
 
 new_model.save("walker2d_pretrain.pkl")
 
-mean_reward, std_reward, rewards = evaluate_policy(new_model, new_env, n_eval_episodes=1000, return_episode_rewards=True)
+mean_reward, std_reward = evaluate_policy(new_model, new_env, n_eval_episodes=1000, return_episode_rewards=True)
 print(f"Mean reward: {mean_reward:.2f} +/- {std_reward:.2f}")
-print(f"add the rewards {rewards}")
