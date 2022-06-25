@@ -43,7 +43,7 @@ def pretrain_agent(
     batch_size=64,
     epochs=100,
     scheduler_gamma=0.7,
-    learning_rate=0.01,
+    learning_rate=1,
     log_interval=100,
     no_cuda=True,
     seed=1,
