@@ -92,7 +92,7 @@ if __name__ == "__main__":  # noqa: C901
         default="median",
         choices=["halving", "median", "none"],
     )
-    parser.add_argument("--n-startup-trials", help="Number of trials before using optuna sampler", type=int, default=10)
+    parser.add_argument("--n-startup-trials", help="Number of trials before using optuna sampler", type=int, default=1000)
     parser.add_argument(
         "--n-evaluations",
         help="Training policies are evaluated every n-timesteps // n-evaluations steps when doing hyperparameter optimization."

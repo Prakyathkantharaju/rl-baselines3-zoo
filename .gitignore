@@ -18,3 +18,4 @@ runs
 hub
 *.mp4
 *.json
+walker_hyper_eval_results/*
